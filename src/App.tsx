@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import { User } from './@types/types';
+import UserCard from './components/UserCard';
+import data from "./users.json";
 function App() {
+  const [users,setUsers]=useState<User[]|null>(data.users)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col items-center justify-center h-screen px-32 space-y-12">
+      <h1 className='text-xl font-bold'>Our Customers</h1>
+     <div className='grid grid-cols-3 gap-12 w-full px-12 py-12'>
+        {
+          users?.map((user)=>(
+            <UserCard key={user.name} {...user}/>
+          ))
+        }
+     </div>
     </div>
   );
 }
