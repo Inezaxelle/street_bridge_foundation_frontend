@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "JosefinSans-VariableFont_wght";
+  src: url("./fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
 .App {
   text-align: center;
 }
