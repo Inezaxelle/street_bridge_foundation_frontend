@@ -18,7 +18,7 @@ const Donate: React.FC = () => {
             programming that recognizes, supports, and fosters the wellbeing of
             families we help.
           </span>
-          <button className="text-[#082244] bg-white rounded-2xl p-3 w-4/5 mt-6">Learn more</button>
+          <button className="text-[#082244] bg-white rounded-2xl p-3 w-4/5 mt-6 hover:text-white hover:bg-[#082244] hover:border hover:border-white">Learn more</button>
         </div>
         <div className="absolute right-20 mt-5 lg:block hidden">
           <img src={image} alt="good deed" className="h-[505px]" />

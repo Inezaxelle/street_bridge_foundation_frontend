@@ -12,7 +12,7 @@ const DonateNow: React.FC = () => {
           kids on streets back to their homes and prepare them for their future
           careers
         </span>
-        <button className="text-white bg-[#082244] px-5 py-2 w-1/2 rounded-xl mt-6">Donate Now</button>
+        <button className="text-white bg-[#082244] px-5 py-2 w-1/2 rounded-xl mt-6 hover:text-[#082244] hover:bg-white hover:border hover:border-[#082244]">Donate Now</button>
       </div>
     </div>
   );

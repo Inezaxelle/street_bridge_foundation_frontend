@@ -23,7 +23,7 @@ const Stories: React.FC = () => {
             patients who lost their lives due to lack of a quick transfusion.
             (April, 2022)
           </span>
-          <button className="text-white bg-[#082244] rounded-2xl p-3 w-4/5 mt-6">
+          <button className="text-white bg-[#082244] hover:text-[#082244] hover:bg-white hover:border hover:border-[#082244] rounded-2xl p-3 w-4/5 mt-6">
             Read more
           </button>
         </div>
