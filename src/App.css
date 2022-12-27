@@ -2,7 +2,11 @@
   font-family: "JosefinSans-VariableFont_wght";
   src: url("./fonts/JosefinSans-VariableFont_wght.ttf");
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
