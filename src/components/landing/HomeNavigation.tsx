@@ -4,6 +4,7 @@ import Programs from "../programs/Programs";
 import About from "../about/About";
 import News from "../news/News";
 import { Routes, Route, useNavigate } from "react-router-dom";
+import Donate from "../donate/Donate";
 const HomeNavigation: React.FC = () => {
   const navigate = useNavigate();
   const navigateLogin = () => {
@@ -18,6 +19,9 @@ const HomeNavigation: React.FC = () => {
   const navigateNews = () => {
     navigate("/news");
   };
+  const navigateDonate=()=>{
+    navigate("/donate")
+  }
   let url = "";
   return (
     <div>
@@ -54,6 +58,7 @@ const HomeNavigation: React.FC = () => {
             <a
               href={url}
               className="block md:mt-4 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-4 mr-2"
+              onClick={navigateDonate}
             >
               Donate
             </a>
@@ -69,6 +74,7 @@ const HomeNavigation: React.FC = () => {
               <Route path="/programs" element={<Programs />}></Route>
               <Route path="/about" element={<About />}></Route>
               <Route path="/news" element={<News />}></Route>
+              <Route path="/donate" element={<Donate/>}></Route>
             </Routes>
           </div>
         </div>

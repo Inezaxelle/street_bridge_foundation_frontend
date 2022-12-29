@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .prog{
-    background-image: url('../src/images/program.svg');
+    background-image: url('../src/images/programs.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .about {
-    background-image: url('../src/images/about.svg');
+    background-image: url('../src/images/about.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .news{
-    background-image: url('../src/images/news.svg');
+    background-image: url('../src/images/news.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .donate{
-    background-image: url('../src/images/donateImg.svg');
+    background-image: url('../src/images/donateImg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }

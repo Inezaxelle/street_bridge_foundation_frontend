@@ -3,7 +3,7 @@ import LandingLeft from "./LandingLeft";
 import LandingRight from "./LandingRight";
 import Bottom from "./Bottom";
 import Prog from "./Prog";
-import Donate from "./impact";
+import Impact from "./Impact";
 import Stories from "./Stories";
 import DonateNow from "./DonateNow";
 import Footer from "./Footer";
@@ -23,15 +23,9 @@ const Landing: React.FC = () => {
       <div className="w-full lg:h-[60vh]">
         <Prog />
       </div>
-      <div className="2xl:h-[100vh] lg:h-[110vh] h-[50vh] bg-[#E7EFFB]">
-        <Donate />
-      </div>
-      <div className="2xl:h-[100vh] lg:h-[120vh] h-[50vh] bg-[#F9F5E8]">
-        <Stories />
-      </div>
-      <div className="h-[50vh]">
-        <DonateNow />
-      </div>
+      <Impact />
+      <Stories />
+      <DonateNow />
       <Footer />
     </div>
   );

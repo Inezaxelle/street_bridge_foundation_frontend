@@ -22,7 +22,7 @@ const Navigation: React.FC = () => {
     navigate("/news");
   };
   const navigateHome = () => {
-    navigate("/sbs");
+    navigate("/home");
   };
   const navigateDonate=()=>{
     navigate("/donate");

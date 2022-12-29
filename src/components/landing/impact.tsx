@@ -1,9 +1,9 @@
 import React from "react";
 import line from "../../images/line.svg";
-import image from "../../images/herman.svg"
+import image from "../../images/herman.jpg"
 const Impact: React.FC = () => {
   return (
-    <div className="md:px-24 px-6">
+    <div className="md:px-24 px-6 bg-[#E7EFFB] pb-8">
       <div className="md:flex py-14 font-bold">
         <span className="mr-4">GIVING BACK</span> <br className="md:hidden" />
         <img src={line} alt="" className="md:block hidden" />

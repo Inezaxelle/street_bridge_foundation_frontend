@@ -6,8 +6,8 @@ import twitter from "../../images/twitter.svg";
 const Footer: React.FC = () => {
   return (
     <div className="h-[20vh] w-full text-white bg-[#082244]">
-      <div className="h-[80%] w-full flex md:px-24 px-6">
-        <div className="w-[70%] flex">
+      <div className="h-[70%] w-full flex md:px-24 px-6">
+        <div className="md:w-[70%] w-full flex">
           <div className="h-full w-1/3 flex items-center">
             <a href="#contact">Contact Us & FAQ </a>
           </div>
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
           <a href="#twitter" className=""><img src={twitter} alt="twitter" /></a>
         </div>
       </div>
-      <div className="h-[20%] w-full flex justify-center items-center border-t-2 border-white">
+      <div className="h-[30%] w-full flex justify-center items-center border-t-2 border-white">
         <span>Copyright 2022 - Street Bridge Foundation</span>
       </div>
     </div>

@@ -4,12 +4,12 @@ import blood from "../../images/donate.svg";
 
 const Stories: React.FC = () => {
   return (
-    <div className="md:px-24 px-6">
+    <div className="md:px-24 px-6 pb-8 bg-[#F9F5E8]">
       <div className="md:flex py-14 font-bold">
         <span className="mr-4">STORIES</span> <br className="md:hidden" />
         <img src={line} alt="" className="md:block hidden" />
         <span className="ml-4 md:text-[1em] text-xs">
-          LATEST FROM STREET BRIDGE FOUNDATIONn
+          LATEST FROM STREET BRIDGE FOUNDATION
         </span>
       </div>
       <div className="flex w-full h-full">
