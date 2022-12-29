@@ -1,34 +1,37 @@
 import React from "react";
 import { useState } from "react";
-interface ResetEmailProps {}
+interface ResetPasswordProps {}
 
-const ResetEmail: React.FC<ResetEmailProps> = () => {
-  const [email, setEmail] = useState("");
+const ResetPassword: React.FC<ResetPasswordProps> = () => {
+  const [password, setPassword] = useState("");
+  const [ConfirmPassword, setConfirmPassword] = useState("");
   return (
     <div className="bg-[#082244] w-full h-screen flex items-center justify-center">
       <div className="bg-white flex flex-col w-4/5 h-4/5 items-center rounded-xl">
         <span className="text-[#082244] font-bold text-3xl my-10">Reset Password</span>
         <div className="flex flex-col w-4/5 mb-6">
-          <label htmlFor="email" className="text-[#042144]">
-            Email
+          <label htmlFor="password" className="text-[#042144]">
+            password
           </label>
           <input
-            type="email"
-            name="email"
-            value={email}
-            placeholder="Enter your email here"
-            onChange={(e) => setEmail(e.target.value)}
+            type="password"
+            name="password"
+            value={password}
+            placeholder="Enter your password here"
+            onChange={(e) => setPassword(e.target.value)}
             className="outline-none border border-[#DEDEDE] py-1 text-black pl-2"
           />
         </div>
         <div className="flex flex-col w-4/5">
-          <label htmlFor="confirmEmail" className="text-[#042144]">
-            Confirm Email
+          <label htmlFor="confirmpassword" className="text-[#042144]">
+            Confirm New Password
           </label>
           <input
-            type="email"
-            name="confirmEmail"
-            placeholder="Confirm your email here"
+            type="password"
+            name="confirmpassword"
+            value={ConfirmPassword}
+            onChange={(e)=>setConfirmPassword(e.target.value)}
+            placeholder="Enter your new password"
             className="text-black pl-2 outline-none border border-[#DEDEDE] py-1"
           />
         </div>
@@ -40,4 +43,4 @@ const ResetEmail: React.FC<ResetEmailProps> = () => {
   );
 };
 
-export default ResetEmail;
+export default ResetPassword;

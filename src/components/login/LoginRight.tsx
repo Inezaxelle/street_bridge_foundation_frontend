@@ -5,6 +5,7 @@ interface LoginRightProps {}
 
 const LoginRight: React.FC<LoginRightProps> = () => {
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const handleLogin = () => {
     console.log(email);
   };
@@ -29,6 +30,8 @@ const LoginRight: React.FC<LoginRightProps> = () => {
           <input
             type="password"
             name="password"
+            value={password}
+            onChange={(e)=>setPassword(e.target.value)}
             className="text-black pl-2 outline-none py-1"
             placeholder="Enter your password here"
           />
