@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prog{
+    background-image: url('../src/images/program.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about {
+    background-image: url('../src/images/about.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -4,6 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sbs from "./components/Sbf";
 import ResetEmail from "./components/reset/ResetEmail";
 import ResetPassword from "./components/reset/ResetPassword";
+import Navigation from "./components/Navigation";
+import Programs from "./components/programs/Programs";
+import About from "./components/about/About";
 function App() {
   return (
     <div>
@@ -13,6 +16,9 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/resetEmail" element={<ResetEmail />}></Route>
           <Route path="/resetPassword" element={<ResetPassword />}></Route>
+          <Route path="/navigation" element={<Navigation />}></Route>
+          <Route path="/programs" element={<Programs />}></Route>
+          <Route path="/about" element={<About />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

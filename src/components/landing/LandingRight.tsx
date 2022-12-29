@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "./Navigation";
+import Navigation from "./HomeNavigation";
 import hero from "../../images/hero.svg";
 
 const LandingRight: React.FC = () => {

@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import logo from "../../images/sbf_logo.svg";
+import ResetEmail from "../reset/ResetEmail";
 interface LoginRightProps {}
 
 const LoginRight: React.FC<LoginRightProps> = () => {
@@ -8,6 +10,10 @@ const LoginRight: React.FC<LoginRightProps> = () => {
   const [password, setPassword] = useState("");
   const handleLogin = () => {
     console.log(email);
+  };
+  const navigate = useNavigate();
+  const navigateResetEmail = () => {
+    navigate("/resetEmail");
   };
   return (
     <div className="bg-[#042144] h-screen md:w-2/3 w-full text-white">
@@ -26,12 +32,12 @@ const LoginRight: React.FC<LoginRightProps> = () => {
           />
         </div>
         <div className="flex flex-col w-4/5">
-          <label htmlFor="password" >Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
             value={password}
-            onChange={(e)=>setPassword(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             className="text-black pl-2 outline-none py-1"
             placeholder="Enter your password here"
           />
@@ -44,9 +50,13 @@ const LoginRight: React.FC<LoginRightProps> = () => {
         </button>
       </div>
       <div className="w-4/5 flex mx-auto">
-        <span className="w-4/5 mx-auto mt-6 cursor-pointer">
+        <span className="w-4/5 mx-auto mt-6 cursor-pointer"
+        onClick={navigateResetEmail}>
           Forgot Password?
         </span>
+        <Routes>
+          <Route path="/resetEmail" element={<ResetEmail />}></Route>
+        </Routes>
       </div>
     </div>
   );

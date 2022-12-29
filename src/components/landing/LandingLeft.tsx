@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../images/sbf_logo.svg";
-import Navigation from "./Navigation";
+import Navigation from "./HomeNavigation";
 
 const LandingLeft: React.FC = () => {
   return (
