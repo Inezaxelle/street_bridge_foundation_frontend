@@ -12,3 +12,9 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.news{
+    background-image: url('../src/images/news.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

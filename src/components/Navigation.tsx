@@ -3,6 +3,7 @@ import Login from "./login/Login";
 import logo from "../images/logo.png";
 import Programs from "./programs/Programs";
 import About from "./about/About";
+import News from "./news/News";
 import { Routes, Route, useNavigate } from "react-router-dom";
 const Navigation: React.FC = () => {
   const navigate = useNavigate();
@@ -11,11 +12,14 @@ const Navigation: React.FC = () => {
   };
   const navigatePrograms = () => {
     navigate("/programs");
-  }
+  };
   const navigateAbout = () => {
     navigate("/about");
-  }
-  
+  };
+  const navigateNews = () => {
+    navigate("/news");
+  };
+
   return (
     <div>
       <nav className="flex items-center flex-wrap bg-white p-6 h-[10vh] justify-between">
@@ -47,6 +51,7 @@ const Navigation: React.FC = () => {
             <a
               href="#responsive-header"
               className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
+              onClick={navigateNews}
             >
               News
             </a>
@@ -65,8 +70,9 @@ const Navigation: React.FC = () => {
             </button>
             <Routes>
               <Route path="/login" element={<Login />}></Route>
-              <Route path="/programs" element={<Programs/>}></Route>
-              <Route path="/about" element={<About/>}></Route>
+              <Route path="/programs" element={<Programs />}></Route>
+              <Route path="/about" element={<About />}></Route>
+              <Route path="/news" element={<News />}></Route>
             </Routes>
           </div>
         </div>
