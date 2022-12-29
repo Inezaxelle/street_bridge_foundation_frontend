@@ -4,6 +4,8 @@ import logo from "../images/logo.png";
 import Programs from "./programs/Programs";
 import About from "./about/About";
 import News from "./news/News";
+import Sbf from "./Sbf";
+import Donate from "./donate/Donate";
 import { Routes, Route, useNavigate } from "react-router-dom";
 const Navigation: React.FC = () => {
   const navigate = useNavigate();
@@ -19,45 +21,53 @@ const Navigation: React.FC = () => {
   const navigateNews = () => {
     navigate("/news");
   };
+  const navigateHome = () => {
+    navigate("/sbs");
+  };
+  const navigateDonate=()=>{
+    navigate("/donate");
+  }
+  let url = "";
 
   return (
     <div>
       <nav className="flex items-center flex-wrap bg-white p-6 h-[10vh] justify-between">
-        <div className="h-full w-[30%]">
+        <div className="h-full w-[30%] cursor-pointer" onClick={navigateHome}>
           <img src={logo} alt="" className="h-full" />
         </div>
         <div className="w-[70%]">
           <div className="text-sm flex items-center justify-between">
             <a
-              href="#responsive-header"
+              href={url}
               className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
               onClick={navigateAbout}
             >
               About
             </a>
             <a
-              href="#responsive-header"
+              href={url}
               className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
               onClick={navigatePrograms}
             >
               Programs
             </a>
             <a
-              href="#responsive-header"
+              href={url}
               className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
             >
               Involve
             </a>
             <a
-              href="#responsive-header"
+              href={url}
               className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
               onClick={navigateNews}
             >
               News
             </a>
             <a
-              href="#responsive-header"
+              href={url}
               className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
+              onClick={navigateDonate}
             >
               Donate
             </a>
@@ -73,6 +83,8 @@ const Navigation: React.FC = () => {
               <Route path="/programs" element={<Programs />}></Route>
               <Route path="/about" element={<About />}></Route>
               <Route path="/news" element={<News />}></Route>
+              <Route path="/home" element={<Sbf />}></Route>
+              <Route path="/donate" element={<Donate />}></Route>
             </Routes>
           </div>
         </div>

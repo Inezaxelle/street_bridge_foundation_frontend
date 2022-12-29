@@ -3,7 +3,7 @@ import LandingLeft from "./LandingLeft";
 import LandingRight from "./LandingRight";
 import Bottom from "./Bottom";
 import Prog from "./Prog";
-import Donate from "./Donate";
+import Donate from "./impact";
 import Stories from "./Stories";
 import DonateNow from "./DonateNow";
 import Footer from "./Footer";

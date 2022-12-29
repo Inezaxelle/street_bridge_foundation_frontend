@@ -1,7 +1,7 @@
 import React from "react";
 import Landing from "./landing/Landing";
 
-const Sbs: React.FC = () => {
+const Sbf: React.FC = () => {
     return (
         <div className="">
             <Landing />
@@ -9,4 +9,4 @@ const Sbs: React.FC = () => {
     )
 }
 
-export default Sbs;
+export default Sbf;

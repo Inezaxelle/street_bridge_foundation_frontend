@@ -18,3 +18,8 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.donate{
+    background-image: url('../src/images/donateImg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
