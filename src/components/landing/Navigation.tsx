@@ -1,5 +1,11 @@
 import React from "react";
+import Login from "../login/Login";
+import { Routes, Route, useNavigate } from "react-router-dom";
 const Navigation: React.FC = () => {
+  const navigate = useNavigate();
+  const navigateLogin = () => {
+    navigate("/login");
+  };
   return (
     <div>
       <nav className="flex items-center flex-wrap bg-[#5B9431] p-6">
@@ -36,12 +42,15 @@ const Navigation: React.FC = () => {
               Donate
             </a>
 
-            <a
-              href="#login"
+            <button
               className="inline-block text-sm px-4 py-2 leading-none rounded-xl bg-[#082244] text-white hover:border hover:border-white hover:bg-[#5B9431] lg:mt-0 md:mt-8 mt-0"
+              onClick={navigateLogin}
             >
               Login
-            </a>
+            </button>
+            <Routes>
+              <Route path="/login" element={<Login />}></Route>
+            </Routes>
           </div>
         </div>
       </nav>
