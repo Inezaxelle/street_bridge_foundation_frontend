@@ -1,6 +1,8 @@
 import React from "react";
 import Login from "../login/Login";
 import Programs from "../programs/Programs";
+import About from "../about/About";
+import News from "../news/News";
 import { Routes, Route, useNavigate } from "react-router-dom";
 const HomeNavigation: React.FC = () => {
   const navigate = useNavigate();
@@ -10,6 +12,13 @@ const HomeNavigation: React.FC = () => {
   const navigatePrograms = () => {
     navigate("/programs");
   }
+  const navigateAbout = () => {
+    navigate("/about");
+  };
+  const navigateNews = () => {
+    navigate("/news");
+  };
+
   return (
     <div>
       <nav className="flex items-center flex-wrap bg-[#5B9431] p-6">
@@ -18,6 +27,7 @@ const HomeNavigation: React.FC = () => {
             <a
               href="#responsive-header"
               className="block md:mt-4 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-4 mr-2"
+              onClick={navigateAbout}
             >
               About
             </a>
@@ -37,6 +47,7 @@ const HomeNavigation: React.FC = () => {
             <a
               href="#responsive-header"
               className="block md:mt-4 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-4 mr-2"
+              onClick={navigateNews}
             >
               News
             </a>
@@ -55,7 +66,9 @@ const HomeNavigation: React.FC = () => {
             </button>
             <Routes>
               <Route path="/login" element={<Login />}></Route>
-              <Route path="/programs" element={<Programs/>}></Route>
+              <Route path="/programs" element={<Programs />}></Route>
+              <Route path="/about" element={<About />}></Route>
+              <Route path="/news" element={<News />}></Route>
             </Routes>
           </div>
         </div>
