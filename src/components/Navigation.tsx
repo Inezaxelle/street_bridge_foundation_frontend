@@ -32,41 +32,35 @@ const Navigation: React.FC = () => {
   return (
     <div>
       <nav className="flex items-center flex-wrap bg-white p-6 h-[10vh] justify-between">
-        <div className="h-full w-[30%] cursor-pointer" onClick={navigateHome}>
+        <div className="h-full w-[30%] cursor-pointer md:block hidden" onClick={navigateHome}>
           <img src={logo} alt="" className="h-full" />
         </div>
-        <div className="w-[70%]">
+        <div className="md:w-[70%] w-full">
           <div className="text-sm flex items-center justify-between">
             <a
               href={url}
-              className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
+              className="text-[#082244] hover:font-bold lg:mr-4"
               onClick={navigateAbout}
             >
               About
             </a>
             <a
               href={url}
-              className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
+              className="text-[#082244] hover:font-bold lg:mr-4"
               onClick={navigatePrograms}
             >
               Programs
             </a>
             <a
               href={url}
-              className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
-            >
-              Involve
-            </a>
-            <a
-              href={url}
-              className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
+              className="text-[#082244] hover:font-bold lg:mr-4"
               onClick={navigateNews}
             >
               News
             </a>
             <a
               href={url}
-              className="text-[#082244] hover:font-bold lg:mr-4 mr-2"
+              className="text-[#082244] hover:font-bold lg:mr-4"
               onClick={navigateDonate}
             >
               Donate

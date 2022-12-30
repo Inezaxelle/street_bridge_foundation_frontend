@@ -15,7 +15,7 @@ const DonateJoin: React.FC<DonateJoinProps> = () => {
           homes and prepare them for their future careers{" "}
         </span>
       </div>
-      <div className="flex justify-between">
+      <div className="md:flex justify-between">
         <Package />
         <Methods />
       </div>

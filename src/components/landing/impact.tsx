@@ -10,7 +10,7 @@ const Impact: React.FC = () => {
         <span className="ml-4 md:text-[1em] text-xs">GET INVOLVED</span>
       </div>
       <div className="flex w-full h-full">
-        <div className="lg:flex flex-col bg-[#082244] lg:w-[60%] h-[505px] lg:px-32 px-6 text-white lg:z-40">
+        <div className="lg:flex flex-col bg-[#082244] lg:w-[60%] lg:py-0 py-6 lg:h-[505px] lg:px-32 px-6 text-white lg:z-40">
           <span className="mb-6 mt-14">Donate to our programs</span>
           <span>
             Directly Impact the future of countless families. It is only with

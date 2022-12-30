@@ -3,7 +3,7 @@ interface PackageProps {}
 
 const Package: React.FC<PackageProps> = () => {
   return (
-    <div className="bg-white w-1/2 flex justify-start mt-8">
+    <div className="bg-white md:w-1/2 w-full flex justify-start mt-8">
       <div className="w-full bg-[#F9F5E8] flex flex-col p-7">
         <div className="bg-[#082244] text-white py-2 flex justify-center mt-4 text-[1.6vw]">
           Here is our Donation Package

@@ -12,7 +12,7 @@ const DonateNow: React.FC = () => {
       <div className="w-1/2 md:flex hidden justify-center items-center">
         <img src={logo} alt="sbf logo" />
       </div>
-      <div className="md:w-1/3 w-full flex flex-col justify-center mx-auto">
+      <div className="md:w-1/3 w-full flex flex-col justify-center mx-auto py-6">
         <span className="text-[#082244] font-bold text-lg mx-auto">
           Join Street Bridge Foundation in Transforming the lives of vulnerable
           kids on streets back to their homes and prepare them for their future

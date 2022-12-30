@@ -16,8 +16,8 @@ const Stories: React.FC = () => {
         <div className="lg:block hidden w-[60%]">
           <img src={blood} alt="good deed" className="h-[601px]" />
         </div>
-        <div className="lg:flex flex-col bg-[#FFFFFF] lg:w-[40%] h-[400px] lg:px-32 px-6 text-black lg:z-40 mt-14">
-          <span className="mb-6 mt-14">#Blood donation</span>
+        <div className="lg:flex flex-col bg-[#FFFFFF] lg:w-[40%] lg:h-[400px] lg:py-0 py-6 lg:px-32 px-6 text-black lg:z-40 mt-14">
+          <span className="mb-6 mt-14">#Blood donation</span> <br className="lg:hidden block" />
           <span>
             #StreetBridgeFoundation donates blood in memories of the vulnerable
             patients who lost their lives due to lack of a quick transfusion.
