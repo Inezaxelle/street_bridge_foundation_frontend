@@ -3,6 +3,7 @@ import Navigation from "../Navigation";
 import ProgImage from "./ProgImage";
 import DonateNow from "../landing/DonateNow";
 import Footer from "../landing/Footer";
+import SbfPartners from "./SbfPartners";
 
 interface ProgramsProps {}
 
@@ -11,6 +12,7 @@ const Programs: React.FC<ProgramsProps> = () => {
     <div>
       <Navigation />
       <ProgImage />
+      <SbfPartners />
       <DonateNow />
       <Footer />
     </div>
