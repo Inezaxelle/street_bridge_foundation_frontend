@@ -3,6 +3,8 @@ import Navigation from "../Navigation";
 import AboutImage from "./AboutImage";
 import DonateNow from "../landing/DonateNow";
 import Footer from "../landing/Footer";
+import Mission from "./Mission";
+import Hear from "./Hear";
 
 interface AboutProps {}
 
@@ -11,6 +13,8 @@ const About: React.FC<AboutProps> = () => {
     <div>
       <Navigation />
       <AboutImage />
+      <Mission />
+      <Hear />
       <DonateNow />
       <Footer />
     </div>
