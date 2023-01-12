@@ -45,12 +45,6 @@ const HomeNavigation: React.FC = () => {
             <a
               href={url}
               className="block md:mt-4 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-4 mr-2"
-            >
-              Involve
-            </a>
-            <a
-              href={url}
-              className="block md:mt-4 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white lg:mr-4 mr-2"
               onClick={navigateNews}
             >
               News
